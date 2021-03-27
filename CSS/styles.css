@@ -1,0 +1,308 @@
+header {
+  width: 100%;
+  height: 60px;
+  top: 0px;
+  padding: 10px 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #2f3337;
+}
+
+header .logo {
+  float: left;
+  width: 24px;
+}
+
+header h2 {
+  color: white;
+  font-size: 20px;
+  padding-right: 80px;
+}
+
+header nav {
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .menu {
+  padding-top: 3px;
+  /*checkbox transparente y en primer plano*/
+  /*span -lineas del menu hamburguesa-*/
+}
+
+header nav .menu ul {
+  /*posicion absolute para que se posicione debajo del 
+                     resto del header - top medida del header*/
+  width: 100%;
+  position: absolute;
+  top: 45px;
+  right: 0;
+  overflow: hidden;
+  list-style: none;
+  background: #f2f2f2;
+  height: 0px;
+  -webkit-transition: height 0.5s ease;
+  transition: height 0.5s ease;
+}
+
+header nav .menu ul li {
+  position: relative;
+  background: #2f3337;
+}
+
+header nav .menu ul li a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  padding: 16px 5%;
+  display: block;
+}
+
+header nav .menu ul li a:hover {
+  background: unset;
+  color: #00F3BB;
+  text-decoration: line-through;
+}
+
+header nav .menu ul li a:active {
+  color: rgba(6, 10, 36, 0.56);
+}
+
+header nav .menu input[type="checkbox"]:checked ~ ul {
+  height: 200px;
+  transition: height 0.5s ease-in-out;
+  -moz-transition: height 0.5s ease-in-out;
+  -o-transition: height 0.5s ease-in-out;
+  -webkit-transition: height 0.5s ease-in-out;
+}
+
+header nav .menu input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  opacity: 0;
+  z-index: 2;
+  position: absolute;
+}
+
+header nav .menu input:checked ~ span {
+  opacity: 1;
+  -webkit-transform: rotate(45deg) translate(2px, 1px);
+          transform: rotate(45deg) translate(2px, 1px);
+}
+
+header nav .menu input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+          transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+header nav .menu input:checked ~ span:nth-last-child(2) {
+  -webkit-transform: rotate(-45deg) translate(1px, 0px);
+          transform: rotate(-45deg) translate(1px, 0px);
+}
+
+header nav .menu span {
+  display: block;
+  width: 25px;
+  height: 2.5px;
+  margin-bottom: 6.5px;
+  position: relative;
+  background: white;
+  z-index: 1;
+  -webkit-transform-origin: 3px 0px;
+          transform-origin: 3px 0px;
+  -webkit-transition: opacity 0.55s ease,-webkit-transform 0.5s ease;
+  transition: opacity 0.55s ease,-webkit-transform 0.5s ease;
+  transition: transform 0.5s ease,opacity 0.55s ease;
+  transition: transform 0.5s ease,opacity 0.55s ease,-webkit-transform 0.5s ease;
+}
+
+header nav .menu span:first-child {
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+
+header nav .menu span:nth-last-child(2) {
+  -webkit-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+}
+
+@media screen and (min-width: 1000px) {
+  header {
+    padding: 10px 5px 10px 70px;
+  }
+  header .logo {
+    width: 36px;
+  }
+  header nav .menu ul {
+    position: relative;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    background: unset;
+    height: unset;
+    width: 550px;
+  }
+  header nav .menu ul li {
+    padding: 5px 25px;
+    display: inline-block;
+    background: #2f3337;
+  }
+  header nav .menu ul li a {
+    color: black;
+    padding: unset;
+    line-height: unset;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 16px;
+  }
+  header nav .menu ul li a:hover {
+    background: unset;
+    color: #00F3BB;
+    text-decoration: line-through;
+  }
+  header nav .menu ul li a:active {
+    color: rgba(6, 10, 36, 0.56);
+  }
+  header nav .menu input {
+    display: none;
+  }
+  header nav .menu span {
+    display: none;
+  }
+}
+
+main {
+  background-color: #e5e7eb;
+  padding-top: 30px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .containerbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .containerbox .box {
+  margin: 60px 0px 10px;
+  background-color: white;
+  width: 90%;
+  height: 140px;
+  border-radius: 8px;
+  -webkit-box-shadow: 2px 2px 10px #b4b4b9;
+          box-shadow: 2px 2px 10px #b4b4b9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .containerbox .box .parte-superior {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 20px;
+}
+
+main .containerbox .box .parte-superior .logotipo {
+  -webkit-box-shadow: 2px 2px 10px #b4b4b9;
+          box-shadow: 2px 2px 10px #b4b4b9;
+  width: 55px;
+  height: 59px;
+  background-color: #26b4ff;
+  border-radius: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  margin-bottom: 65px;
+}
+
+main .containerbox .box .parte-superior .logotipo img {
+  height: 30px;
+  width: 30px;
+}
+
+main .containerbox .box .parte-superior h2 {
+  font-size: 20px;
+  color: #060A24;
+  font-family: "IBM Plex Sans", sans-serif;
+  padding-left: 25%;
+  width: 96%;
+}
+
+main .containerbox .box .parte-inferior {
+  width: 100%;
+  height: 45px;
+  border-top: solid 0.5px;
+  border-color: gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 15px;
+}
+
+main .containerbox .box .parte-inferior img {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+main .containerbox .box .parte-inferior p {
+  font-size: 10px;
+  padding-left: 5px;
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+  border: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+/*# sourceMappingURL=styles.css.map */

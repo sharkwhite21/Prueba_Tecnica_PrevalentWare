@@ -1,0 +1,177 @@
+header{
+        width: 100%;
+        height: 60px;
+        top: 0px;
+        padding: 10px 5%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: $bg-primary;
+        
+        .logo{
+            float: left;
+            width: 24px;
+        }
+
+        h2{
+            color: $color_two;
+            font-size: 20px;
+            padding-right: 80px;
+        }
+
+        nav{
+            float: right;
+            display: flex;
+            align-items: center;
+            .menu {
+                padding-top: 3px;
+
+                ul{
+                     /*posicion absolute para que se posicione debajo del 
+                     resto del header - top medida del header*/
+                    width: 100%;
+                    position: absolute;
+                    top: 45px;
+                    right: 0;
+                    overflow: hidden;
+                    list-style: none;
+                    background: #f2f2f2;
+                    height: 0px;
+                    transition: height 0.5s ease;
+
+                    li{
+                        position: relative;
+                        background: $bg-primary;
+                        a{
+                            position: relative;
+                            text-decoration: none;
+                            color: white;
+                            padding: 16px 5%;
+                            display: block;
+                            &:hover{
+                                background: unset;
+                                color: $bottom_1;
+                                text-decoration: line-through;                                
+                            }
+
+                            &:active{
+                                color:$color_active;
+                            }
+                        }                        
+                    }
+                }
+
+                input[type="checkbox"]:checked ~ ul {
+                    height: 200px;
+                    transition: height 0.5s ease-in-out;
+                    -moz-transition: height 0.5s ease-in-out;
+                    -o-transition: height 0.5s ease-in-out;
+                    -webkit-transition: height 0.5s ease-in-out;
+                }
+
+                /*checkbox transparente y en primer plano*/
+                input{
+                    display: block;
+                    width: 40px;
+                    height: 32px;
+                    opacity: 0;
+                    z-index: 2;
+                    position: absolute;
+                    
+                    &:checked ~ span{
+                        opacity: 1;
+                        transform: rotate(45deg) translate(2px, 1px);
+                    }
+                    &:checked ~ span:nth-last-child(3) {
+                        opacity: 0;
+                        transform: rotate(0deg) scale(0.2, 0.2);
+                    }
+                    &:checked ~ span:nth-last-child(2) {                        
+                        transform: rotate(-45deg) translate(1px, 0px);
+                    }
+                }
+
+                /*span -lineas del menu hamburguesa-*/
+                span{
+                    display: block;
+                    width: 25px;
+                    height: 2.5px;
+                    margin-bottom: 6.5px;
+                    position: relative;
+                    background: $color_two;
+                    z-index: 1;
+                    transform-origin: 3px 0px;
+                    transition: transform 0.5s ease,opacity 0.55s ease;
+                    
+                    &:first-child{
+                        transform-origin: 0% 0%; 
+                    }
+
+                    &:nth-last-child(2){
+                        transform-origin: 0% 100%;
+                    }
+                }
+
+            }
+        }
+
+        @media screen and (min-width: 1000px){
+
+            padding: 10px 5px 10px 70px;
+
+
+            .logo{
+                width: 36px;
+            }
+                        
+            nav{
+                
+                .menu{
+                                      
+                    ul{
+                        position: relative;
+                        top: 0;
+                        right: 0;
+                        overflow: hidden;
+                        background: unset;
+                        height: unset;
+                        
+                        width: 550px;
+                        li{
+                            padding: 5px 25px;
+                            display: inline-block;
+                            background: $bg-primary;
+                            
+                            a{
+                                color: black;
+                                padding: unset;
+                                line-height: unset;
+                                font-family: $fuente_2;
+                                font-size: 16px;
+                                
+                                &:hover{
+                                    background: unset;
+                                    color: $bottom_1;
+                                    text-decoration: line-through;
+
+                                    
+                                }
+
+                                &:active{
+                                    color:$color_active;
+                                }
+                            }
+                        }
+                    }
+                    input{
+                        display: none;
+                    }
+                    span{
+                        display:none;
+                    }
+                }
+            }
+        }
+            
+        }
+  
