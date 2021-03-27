@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/styles.css">
     <script src="https://kit.fontawesome.com/dfa8884d75.js" crossorigin="anonymous"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,7 +32,65 @@
     </header>
 
     <main>
-        <div class='containerbox'>
+        <div class='containerbox companies'>
+
+            <div class='headerlinks'>
+                <p><a href="index.html">Administracion</a>/Aprobacion de empresas</p>
+            </div>
+
+            <div class='links'>
+                <img src="Sources/chevron-circle-left-solid.svg" alt="">
+                <p>Empresa 1 de 2 pendiente por aprobacion</p> 
+                <img src="Sources/chevron-circle-right-solid.svg" alt="">
+            </div>
+
+            <div class='formulario-stock'>
+
+                <img src="Sources/LogoEmpresa.png" alt="">
+
+                <form action="">
+                    <p>Nombre de la Empresa</p>
+                    <input type="text" name="Nombre" value="PREVALENTWARE" readonly>
+                    <p>Razon social</p>
+                    <input type="text" name="RS" value="PREVALENTWARE S.A.S" readonly>
+                    <p>Tipo de identificacion</p>
+                    <input type="text" name="NIT" value="NIT" readonly>
+                    <p>Identificacion</p>
+                    <input type="text" name="Identificacion" value="901375750-4" readonly>
+                    <p># de empleados</p>
+                    <input type="text" name="empleados" value="1 - 10" readonly>
+                </form>
+
+                <div class="documentos">
+                    <h2>Documentos Cargados</h2>
+                    <div>
+                        <h2>RUT PrevalentWare</h2>
+                    </div>
+                    <div>
+                        <h2>RUT PrevalentWare</h2>
+                    </div>
+                    <div>
+                        <h2>RUT PrevalentWare</h2>
+                    </div>
+                    <div>
+                        <h2>RUT PrevalentWare</h2>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div class='decisiones'>
+                <div class='box-small'>
+                    <img src="Sources/check-circle-solid.svg" alt="">
+                    <h2>Aprobar Empresa</h2>
+                </div>
+                <div class='box-small'>
+                    <img src="Sources/times-circle-solid.svg" alt="">
+                    <h2>Rechazar Empresa</h2>
+                </div>
+            </div>
         </div>
     </main>
 </body>
