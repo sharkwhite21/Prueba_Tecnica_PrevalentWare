@@ -13,8 +13,11 @@
 <body>
 
     <header>
-        <img class="logo" src="Sources/brain-solid.svg" alt="">
         <h2>Gente PreValente</h2>
+        <div class="container-1">
+            <img class="lupa_trending" src="Sources/icon-search-trending.svg" alt="Lupa" id="lupaTe">                    
+            <input type="text" id="search" placeholder="Buscar..." />
+        </div>
         <nav >
             <div class="menu">
                 <input type="checkbox" id="checkbox"/>
@@ -22,10 +25,26 @@
                 <span></span>
                 <span></span>
                 <ul class="nav-items">                
-                    <li><a href="#Episodios">Administracion</a></li>
-                    <li><a href="#Nosotros">Empleo</a></li>
-                    <li><a href="#Entrevistas">Mi CV</a></li>
-                    <li><a href="#Temas">Marlon</a></li>
+                    <li>
+                        <img src="Sources/cogs-solid.svg" alt="">
+                        <a href="">Administracion</a>
+                    </li>
+                    <li>
+                        <img src="Sources/suitcase-solid.svg" alt="">
+                        <a href="">Empleo</a>
+                        <img src="Sources/chevron-down-solid.svg" alt="" class="arrow-down">
+
+                    </li>
+                    <li>
+                        <img src="Sources/clipboard-list-solid.svg" alt="">
+                        <a href="">Mi CV</a>
+                    </li>
+                    <li>
+                        <div class='perfil'>
+                        </div>
+                        <a href="">Marlon</a>
+                        <img src="Sources/chevron-down-solid.svg" alt=""  class="arrow-down">
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -46,19 +65,41 @@
 
             <div class='formulario-stock'>
 
-                <img src="Sources/LogoEmpresa.png" alt="">
-
+                <div class='principal'>
+                    <img src="Sources/LogoEmpresa.png" alt="">
+                    <div class='decisiones2'>
+                        <div class='box-small'>
+                            <img src="Sources/check-circle-solid.svg" alt="">
+                            <h2>Aprobar Empresa</h2>
+                        </div>
+                        <div class='box-small'>
+                            <img src="Sources/times-circle-solid.svg" alt="">
+                            <h2>Rechazar Empresa</h2>
+                        </div>
+                    </div>
+                </div>
+                
                 <form action="">
-                    <p>Nombre de la Empresa</p>
-                    <input type="text" name="Nombre" value="PREVALENTWARE" readonly>
-                    <p>Razon social</p>
-                    <input type="text" name="RS" value="PREVALENTWARE S.A.S" readonly>
-                    <p>Tipo de identificacion</p>
-                    <input type="text" name="NIT" value="NIT" readonly>
-                    <p>Identificacion</p>
-                    <input type="text" name="Identificacion" value="901375750-4" readonly>
-                    <p># de empleados</p>
-                    <input type="text" name="empleados" value="1 - 10" readonly>
+                    <div>
+                        <p>Nombre de la Empresa</p>
+                        <input type="text" name="Nombre" value="PREVALENTWARE" readonly>    
+                    </div>
+                    <div>
+                        <p>Razon social</p>
+                        <input type="text" name="RS" value="PREVALENTWARE S.A.S" readonly>
+                    </div>
+                    <div>
+                        <p>Tipo de identificacion</p>
+                        <input type="text" name="NIT" value="NIT" readonly>
+                    </div>
+                    <div>
+                        <p>Identificacion</p>
+                        <input type="text" name="Identificacion" value="901375750-4" readonly>
+                    </div>
+                    <div>
+                        <p># de empleados</p>
+                        <input type="text" name="empleados" value="1 - 10" readonly>
+                    </div>
                 </form>
 
                 <div class="documentos">

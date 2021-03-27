@@ -13,8 +13,11 @@
 <body>
 
     <header>
-        <img class="logo" src="Sources/brain-solid.svg" alt="">
         <h2>Gente PreValente</h2>
+        <div class="container-1">
+            <img class="lupa_trending" src="Sources/icon-search-trending.svg" alt="Lupa" id="lupaTe">                    
+            <input type="text" id="search" placeholder="Buscar..." />
+        </div>
         <nav >
             <div class="menu">
                 <input type="checkbox" id="checkbox"/>
@@ -22,10 +25,26 @@
                 <span></span>
                 <span></span>
                 <ul class="nav-items">                
-                    <li><a href="#Episodios">Administracion</a></li>
-                    <li><a href="#Nosotros">Empleo</a></li>
-                    <li><a href="#Entrevistas">Mi CV</a></li>
-                    <li><a href="#Temas">Marlon</a></li>
+                    <li>
+                        <img src="Sources/cogs-solid.svg" alt="">
+                        <a href="">Administracion</a>
+                    </li>
+                    <li>
+                        <img src="Sources/suitcase-solid.svg" alt="">
+                        <a href="">Empleo</a>
+                        <img src="Sources/chevron-down-solid.svg" alt="" class="arrow-down">
+
+                    </li>
+                    <li>
+                        <img src="Sources/clipboard-list-solid.svg" alt="">
+                        <a href="">Mi CV</a>
+                    </li>
+                    <li>
+                        <div class='perfil'>
+                        </div>
+                        <a href="">Marlon</a>
+                        <img src="Sources/chevron-down-solid.svg" alt=""  class="arrow-down">
+                    </li>
                 </ul>
             </div>
         </nav>

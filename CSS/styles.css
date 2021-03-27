@@ -15,11 +15,6 @@ header {
   background-color: #2F3337;
 }
 
-header .logo {
-  float: left;
-  width: 24px;
-}
-
 header h2 {
   color: white;
   padding-right: 80px;
@@ -65,22 +60,20 @@ header nav .menu ul li {
   background: #2F3337;
 }
 
+header nav .menu ul li img {
+  display: none;
+}
+
+header nav .menu ul li img.arrow-down {
+  display: none;
+}
+
 header nav .menu ul li a {
   position: relative;
   text-decoration: none;
   color: white;
   padding: 16px 5%;
   display: block;
-}
-
-header nav .menu ul li a:hover {
-  background: unset;
-  color: #00F3BB;
-  text-decoration: line-through;
-}
-
-header nav .menu ul li a:active {
-  color: rgba(6, 10, 36, 0.56);
 }
 
 header nav .menu input[type="checkbox"]:checked ~ ul {
@@ -145,39 +138,77 @@ header nav .menu span:nth-last-child(2) {
 
 @media screen and (min-width: 1000px) {
   header {
+    height: 70px;
+    width: 100%;
     padding: 10px 5px 10px 70px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
-  header .logo {
-    width: 36px;
+  header .container-1 #search {
+    background-color: #2F3337;
+    margin-left: 14px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  header .container-1 .lupa_trending {
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin-left: 25px;
+    cursor: pointer;
+  }
+  header nav {
+    width: 55%;
   }
   header nav .menu ul {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     top: 0;
     right: 0;
     overflow: hidden;
     background: unset;
     height: unset;
-    width: 550px;
   }
   header nav .menu ul li {
-    padding: 5px 25px;
-    display: inline-block;
+    padding: 5px 22px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     background: #2F3337;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header nav .menu ul li .perfil {
+    background-color: #C4C4C4;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
+  header nav .menu ul li img {
+    width: 25px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    height: 20px;
+  }
+  header nav .menu ul li img.arrow-down {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    cursor: pointer;
   }
   header nav .menu ul li a {
-    color: black;
+    color: white;
     padding: unset;
     line-height: unset;
     font-family: "IBM Plex Mono", monospace;
     font-size: 16px;
-  }
-  header nav .menu ul li a:hover {
-    background: unset;
-    color: #00F3BB;
-    text-decoration: line-through;
-  }
-  header nav .menu ul li a:active {
-    color: rgba(6, 10, 36, 0.56);
+    margin: 0px 8px;
   }
   header nav .menu input {
     display: none;
@@ -267,7 +298,7 @@ main .containerbox .box .parte-superior .logotipo img {
 main .containerbox .box .parte-superior h2 {
   font-size: 20px;
   color: #060A24;
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   padding-left: 25%;
   width: 96%;
 }
@@ -462,6 +493,152 @@ main .companies .decisiones .box-small h2 {
   font-weight: bold;
   font-size: 18px;
   line-height: 21px;
+}
+
+@media screen and (min-width: 1000px) {
+  main {
+    height: 100%;
+  }
+  main .containerbox {
+    margin: 45px 0px 0px 0px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 45% 50%;
+        grid-template-columns: 45% 50%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  main .containerbox .box {
+    cursor: pointer;
+    width: 552px;
+    height: 310px;
+    margin: 20px 0px 65px 40px;
+  }
+  main .containerbox .box .parte-superior .logotipo {
+    width: 108px;
+    height: 115px;
+    margin-bottom: 250px;
+  }
+  main .containerbox .box .parte-superior .logotipo img {
+    height: 56px;
+    width: 52px;
+  }
+  main .containerbox .box .parte-superior h2 {
+    width: 410px;
+    margin-top: 60px;
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: normal;
+    padding-left: initial;
+  }
+  main .containerbox .box .parte-inferior {
+    height: 90px;
+  }
+  main .containerbox .box .parte-inferior img {
+    width: 19px;
+    height: 19px;
+    margin-right: 5px;
+  }
+  main .containerbox .box .parte-inferior p {
+    font-size: 14px;
+  }
+  main .companies {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .companies .headerlinks {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  main .companies .headerlinks p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  main .companies .links {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  main .companies .formulario-stock {
+    width: 940px;
+    height: 730px;
+  }
+  main .companies .formulario-stock .documentos {
+    display: none;
+  }
+  main .companies .formulario-stock form {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+  main .companies .formulario-stock .principal {
+    width: 100%;
+    height: 250px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .companies .formulario-stock .principal img {
+    width: 290px;
+    height: 237px;
+  }
+  main .companies .formulario-stock .principal .decisiones2 {
+    height: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .companies .formulario-stock .principal .decisiones2 .box-small {
+    width: 230px;
+    height: 55px;
+    background-color: white;
+    border-radius: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 30px;
+  }
+  main .companies .formulario-stock .principal .decisiones2 .box-small img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  main .companies .formulario-stock .principal .decisiones2 .box-small h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  main .companies .decisiones {
+    display: none;
+  }
 }
 
 * {

@@ -8,11 +8,6 @@ header{
         justify-content: space-evenly;
         background-color: $bg-primary;
         
-        .logo{
-            float: left;
-            width: 24px;
-        }
-
         h2{
             color: $color_two;
             padding-right: 80px;
@@ -45,21 +40,18 @@ header{
                     li{
                         position: relative;
                         background: $bg-primary;
+                        img{
+                            display: none;
+                        }
+                        img.arrow-down{
+                            display: none;
+                        }
                         a{
                             position: relative;
                             text-decoration: none;
                             color: white;
                             padding: 16px 5%;
                             display: block;
-                            &:hover{
-                                background: unset;
-                                color: $bottom_1;
-                                text-decoration: line-through;                                
-                            }
-
-                            &:active{
-                                color:$color_active;
-                            }
                         }                        
                     }
                 }
@@ -119,50 +111,68 @@ header{
         }
 
         @media screen and (min-width: 1000px){
-
+            height: 70px;
+            width: 100%;
             padding: 10px 5px 10px 70px;
-
-
-            .logo{
-                width: 36px;
+            justify-content: space-around;
+            .container-1{
+                #search{
+                    background-color: $bg-primary;
+                    margin-left: 14px;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+                .lupa_trending{
+                    width: 16px;
+                    height: 16px;
+                    float: left;
+                    margin-left: 25px;
+                    cursor: pointer;
+                }
             }
                         
             nav{
-                
+                width: 55%;
                 .menu{
                                       
                     ul{
                         position: relative;
+                        display: flex;
                         top: 0;
                         right: 0;
                         overflow: hidden;
                         background: unset;
                         height: unset;
-                        
-                        width: 550px;
                         li{
-                            padding: 5px 25px;
-                            display: inline-block;
+                            padding: 5px 22px;
+                            display: inline-flex;
                             background: $bg-primary;
-                            
+                            align-items: center;
+                            .perfil{    
+                                background-color: #C4C4C4;
+                                width: 32px;
+                                height: 32px;
+                                border-radius: 50%;
+                            }
+
+                            img{
+                                width: 25px;
+                                display: inline-flex;
+                                height: 20px;
+                            }
+                            img.arrow-down{
+                                display: inline-flex;
+                                cursor: pointer;
+                            }
                             a{
-                                color: black;
+                                color: white;
                                 padding: unset;
                                 line-height: unset;
                                 font-family: $fuente_2;
                                 font-size: 16px;
-                                
-                                &:hover{
-                                    background: unset;
-                                    color: $bottom_1;
-                                    text-decoration: line-through;
-
-                                    
-                                }
-
-                                &:active{
-                                    color:$color_active;
-                                }
+                                margin: 0px 8px;
                             }
                         }
                     }
