@@ -117,7 +117,7 @@ header{
             }
         }
 
-        @media screen and (min-width: 1400px){
+        @media screen and (min-width: 1000px) and (max-width: 1399px){
             .searcher{
                 display: inline-flex;
                 #search{
@@ -127,6 +127,7 @@ header{
                     font-weight: normal;
                     font-size: 16px;
                     line-height: 19px;
+                    color: white;
                 }
                 .lupa_trending{
                     width: 16px;
@@ -138,7 +139,6 @@ header{
             }
                         
             nav{
-                //margin-left: 20%;
                 .menu{
                                       
                     ul{
@@ -190,11 +190,7 @@ header{
                 }
             }
         }
-
-        @media screen and (min-width: 1000px) and (max-width: 1399px){
-            height: 70px;
-            width: 100%;
-            justify-content: space-around;
+        @media screen and (min-width: 1400px){
             .searcher{
                 display: inline-flex;
                 #search{
@@ -204,6 +200,7 @@ header{
                     font-weight: normal;
                     font-size: 16px;
                     line-height: 19px;
+                    color: white;
                 }
                 .lupa_trending{
                     width: 16px;
@@ -215,9 +212,7 @@ header{
             }
                         
             nav{
-                //margin-left: 20%;
-                .menu{
-                                      
+                .menu{                          
                     ul{
                         position: relative;
                         display: flex;
@@ -268,5 +263,5 @@ header{
             }
         }
             
-        }
+}
   
