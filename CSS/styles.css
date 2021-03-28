@@ -146,7 +146,7 @@ header nav .menu span:nth-last-child(2) {
           transform-origin: 0% 100%;
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1000px) and (max-width: 1399px) {
   header .searcher {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -159,6 +159,7 @@ header nav .menu span:nth-last-child(2) {
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
+    color: white;
   }
   header .searcher .lupa_trending {
     width: 16px;
@@ -224,13 +225,7 @@ header nav .menu span:nth-last-child(2) {
   }
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1399px) {
-  header {
-    height: 70px;
-    width: 100%;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
+@media screen and (min-width: 1400px) {
   header .searcher {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -243,6 +238,7 @@ header nav .menu span:nth-last-child(2) {
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
+    color: white;
   }
   header .searcher .lupa_trending {
     width: 16px;
@@ -656,19 +652,16 @@ main .zoom {
   display: none;
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1000px) and (max-width: 1399px) {
+  main {
+    padding: 0px;
+  }
   main .containerbox {
-    padding: 70px 0px 0px 0px;
+    padding: 75px 0px 0px 30px;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 32% 32%;
-        grid-template-columns: 32% 32%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-grid-columns: 46% 32%;
+        grid-template-columns: 46% 32%;
   }
   main .containerbox .box {
     cursor: pointer;
@@ -713,7 +706,6 @@ main .zoom {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 0px 0px 0px 0px;
   }
   main .companies .headerlinks {
     -ms-flex-item-align: start;
@@ -934,16 +926,19 @@ main .zoom {
   }
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1399px) {
-  main {
-    padding: 0px;
-  }
+@media screen and (min-width: 1400px) {
   main .containerbox {
-    padding: 75px 0px 0px 30px;
+    padding: 70px 0px 0px 0px;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 46% 32%;
-        grid-template-columns: 46% 32%;
+    -ms-grid-columns: 32% 32%;
+        grid-template-columns: 32% 32%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   main .containerbox .box {
     cursor: pointer;
@@ -988,6 +983,7 @@ main .zoom {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding: 0px 0px 0px 0px;
   }
   main .companies .headerlinks {
     -ms-flex-item-align: start;
