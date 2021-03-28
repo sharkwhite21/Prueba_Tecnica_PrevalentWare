@@ -7,7 +7,9 @@ header{
         align-items: center;
         justify-content: space-evenly;
         background-color: $bg-primary;
-        
+        .container-1{
+            display: none;
+        }
         h2{
             color: $color_two;
             padding-right: 80px;
@@ -116,6 +118,7 @@ header{
             padding: 10px 5px 10px 70px;
             justify-content: space-around;
             .container-1{
+                display: inline-flex;
                 #search{
                     background-color: $bg-primary;
                     margin-left: 14px;
@@ -135,6 +138,7 @@ header{
                         
             nav{
                 width: 55%;
+                //margin-left: 20%;
                 .menu{
                                       
                     ul{
@@ -146,10 +150,11 @@ header{
                         background: unset;
                         height: unset;
                         li{
-                            padding: 5px 22px;
+                            padding: 5px 15px;
                             display: inline-flex;
                             background: $bg-primary;
                             align-items: center;
+                            margin-left: 15px;
                             .perfil{    
                                 background-color: #C4C4C4;
                                 width: 32px;

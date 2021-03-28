@@ -15,6 +15,10 @@ header {
   background-color: #2F3337;
 }
 
+header .container-1 {
+  display: none;
+}
+
 header h2 {
   color: white;
   padding-right: 80px;
@@ -144,6 +148,11 @@ header nav .menu span:nth-last-child(2) {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+  header .container-1 {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
   header .container-1 #search {
     background-color: #2F3337;
     margin-left: 14px;
@@ -174,7 +183,7 @@ header nav .menu span:nth-last-child(2) {
     height: unset;
   }
   header nav .menu ul li {
-    padding: 5px 22px;
+    padding: 5px 15px;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -182,6 +191,7 @@ header nav .menu span:nth-last-child(2) {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-left: 15px;
   }
   header nav .menu ul li .perfil {
     background-color: #C4C4C4;
@@ -397,7 +407,7 @@ main .companies .formulario-stock form {
 }
 
 main .companies .formulario-stock form p {
-  font-size: 14;
+  font-size: 14px;
   margin-top: 50px;
   font-style: normal;
   font-weight: normal;
@@ -495,9 +505,18 @@ main .companies .decisiones .box-small h2 {
   line-height: 21px;
 }
 
+main .companies .decisiones2 {
+  display: none;
+}
+
+main .companies .last-box {
+  display: none;
+}
+
 @media screen and (min-width: 1000px) {
   main {
     height: 100%;
+    padding-top: 0px;
   }
   main .containerbox {
     margin: 45px 0px 0px 0px;
@@ -548,6 +567,7 @@ main .companies .decisiones .box-small h2 {
   }
   main .companies {
     width: 100%;
+    margin: 0%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -558,6 +578,8 @@ main .companies .decisiones .box-small h2 {
   main .companies .headerlinks {
     -ms-flex-item-align: start;
         align-self: flex-start;
+    padding-left: 60px;
+    margin-top: 30px;
   }
   main .companies .headerlinks p {
     font-style: normal;
@@ -566,8 +588,28 @@ main .companies .decisiones .box-small h2 {
     line-height: 28px;
   }
   main .companies .links {
-    -ms-flex-item-align: end;
-        align-self: flex-end;
+    display: none;
+  }
+  main .companies .links2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0px 10px 0px 10px;
+    width: 30%;
+    margin: 20px 0 20px;
+  }
+  main .companies .links2 p {
+    font-size: 14px;
+  }
+  main .companies .links2 img {
+    height: 39px;
+    width: 39px;
   }
   main .companies .formulario-stock {
     width: 940px;
@@ -581,6 +623,41 @@ main .companies .decisiones .box-small h2 {
     display: grid;
     -ms-grid-columns: 50% 50%;
         grid-template-columns: 50% 50%;
+    margin-left: 60px;
+  }
+  main .companies .formulario-stock form input {
+    margin-top: 13px;
+    width: 85%;
+  }
+  main .companies .formulario-stock form .last-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 230px;
+    height: 50px;
+    -webkit-box-shadow: 3px 3px 7px #b4b4b9;
+            box-shadow: 3px 3px 7px #b4b4b9;
+    margin-top: 58px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  main .companies .formulario-stock form .last-box img {
+    width: 30px;
+    height: 35px;
+    margin: 0%;
+  }
+  main .companies .formulario-stock form .last-box h2 {
+    margin-left: 20px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
   }
   main .companies .formulario-stock .principal {
     width: 100%;
@@ -591,13 +668,16 @@ main .companies .decisiones .box-small h2 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 30%;
   }
   main .companies .formulario-stock .principal img {
     width: 290px;
     height: 237px;
   }
   main .companies .formulario-stock .principal .decisiones2 {
-    height: 200px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -611,7 +691,7 @@ main .companies .decisiones .box-small h2 {
   }
   main .companies .formulario-stock .principal .decisiones2 .box-small {
     width: 230px;
-    height: 55px;
+    height: 45px;
     background-color: white;
     border-radius: 16px;
     display: -webkit-box;
@@ -623,21 +703,95 @@ main .companies .decisiones .box-small h2 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-shadow: 0px 3px 4px #b4b4b9;
+            box-shadow: 0px 3px 4px #b4b4b9;
     margin-top: 30px;
+    margin-left: 50px;
   }
   main .companies .formulario-stock .principal .decisiones2 .box-small img {
     width: 30px;
     height: 30px;
-    margin-right: 10px;
+    margin: 0px;
   }
   main .companies .formulario-stock .principal .decisiones2 .box-small h2 {
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
     line-height: 21px;
+    margin-left: 14px;
   }
   main .companies .decisiones {
     display: none;
+  }
+  main .zoom {
+    position: absolute;
+    z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: rgba(196, 196, 196, 0.54);
+  }
+  main .zoom .documentos-modal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px;
+    width: 533px;
+    height: 572px;
+    background-color: white;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+  }
+  main .zoom .documentos-modal .close {
+    width: 15px;
+    height: 18px;
+    margin-left: 90%;
+  }
+  main .zoom .documentos-modal h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+  }
+  main .zoom .documentos-modal div {
+    width: 100%;
+    padding: 40px 40px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main .zoom .documentos-modal div h3 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  main .zoom .documentos-modal div img {
+    width: 30px;
+    height: 40px;
   }
 }
 
