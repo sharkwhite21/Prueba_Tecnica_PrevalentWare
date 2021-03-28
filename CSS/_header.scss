@@ -5,9 +5,9 @@ header{
         padding: 10px 5%;
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
         background-color: $bg-primary;
-        .container-1{
+        .searcher{
             display: none;
         }
         h2{
@@ -17,6 +17,10 @@ header{
             font-weight: bold;
             font-size: 16px;
             line-height: 19px;
+            a{
+                text-decoration: none;
+                color: white;
+            }
         }
 
         nav{
@@ -31,7 +35,7 @@ header{
                      resto del header - top medida del header*/
                     width: 100%;
                     position: absolute;
-                    top: 45px;
+                    top: 70px;
                     right: 0;
                     overflow: hidden;
                     list-style: none;
@@ -64,6 +68,7 @@ header{
                     -moz-transition: height 0.5s ease-in-out;
                     -o-transition: height 0.5s ease-in-out;
                     -webkit-transition: height 0.5s ease-in-out;
+                    z-index: 2;
                 }
 
                 /*checkbox transparente y en primer plano*/
@@ -113,10 +118,7 @@ header{
         }
 
         @media screen and (min-width: 1400px){
-            height: 70px;
-            width: 100%;
-            justify-content: space-around;
-            .container-1{
+            .searcher{
                 display: inline-flex;
                 #search{
                     background-color: $bg-primary;
@@ -193,7 +195,7 @@ header{
             height: 70px;
             width: 100%;
             justify-content: space-around;
-            .container-1{
+            .searcher{
                 display: inline-flex;
                 #search{
                     background-color: $bg-primary;

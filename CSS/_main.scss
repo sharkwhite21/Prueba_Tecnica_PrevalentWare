@@ -1,13 +1,13 @@
 main{
     background-color: $bg-secundary;
-    padding-top: 30px;
+    //padding-top: 30px;
     justify-content: space-around;
     .containerbox{
         display: flex;
         flex-direction: column;
         align-items: center;        
         .box{
-            margin: 60px 0px 10px;
+            margin: 45px 0px 10px;
             background-color: white;
             width: 90%;
             height: 140px;
@@ -19,6 +19,7 @@ main{
             align-items: center;
             a{
                 text-decoration: none;
+                //width: 100%;
             }
             .parte-superior{
                 width: 100%;
@@ -36,7 +37,7 @@ main{
                     justify-content: center;
                     align-items: center;
                     position: absolute;
-                    margin-bottom: 65px;
+                    margin-bottom: 100px;
                     img{
                         height: 30px;
                         width: 30px;
@@ -53,7 +54,7 @@ main{
             }
             .parte-inferior{
                 width: 100%;
-                height: 45px;
+                height: 34px;
                 border-top: 0.5px solid #A7A7A7;
                 display: flex;
                 justify-content: flex-start;
@@ -68,12 +69,14 @@ main{
                 p{
                     font-size: 10px;
                     padding-left: 5px;
+                    color: #9A9A9A;
                 }
             }
         }
     }
 
     .companies{
+        padding-top: 30px;
         .headerlinks{         
             a{
             text-decoration: none;
@@ -91,18 +94,18 @@ main{
         }
         .links{
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            justify-content: center;
             padding: 0px 10px 0px 10px;
-            width: 100%;
+            width: 94%;
             margin: 20px 0 20px;
             p{
-                font-size: 14px;
-                
+                font-size: 13px;
+                margin: 0px 7px;
             }
             img{
-                height: 35px;
-                width: 35px;
+                height: 25px;
+                width: 25px;
             }
 
         }
@@ -110,54 +113,70 @@ main{
         .formulario-stock{
             background-color: white;
             border-radius: 8px;
-            width: 338px;
-            height: 1120px;
+            width: 80%;
+            height: 80%;
             display: flex;
             flex-direction: column;
             align-items: center;
             margin-top: 30px;
             margin-bottom: 20px;
-            img{
-               // margin-top: 50px;
-                width: 290px;
-                height: 237px;
-                margin: 50px 0 20px;
+            .principal{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img{
+                   // margin-top: 50px;
+                    width: 80%;
+                    height: 80%;
+                    margin: 50px 0 20px;
+                }
+                .decisiones2{
+                    display: none;
+                }
+
             }
             form{
                 width: 100%;
-                padding-left: 45px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 80%;
                 
-                p{
-                    font-size: 14px;
-                    margin-top: 50px;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 14px;
-                    line-height: 16px;
-                    
-                }
-                input{
-                    margin-top: 5px;
-                    padding-bottom: 3px;
-                    font-size: 16px;
-                    font-family: Roboto;
-                    font-style: normal;
-                    font-weight: bold;
-                    font-size: 16px;
-                    line-height: 19px;
-                    border-bottom: 0.5px solid #A7A7A7;
-                    
-                    
+                div{
+                    width: 80%;
+                    p{
+                        font-size: 14px;
+                        margin-top: 50px;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 16px;
+                        
+                    }
+                    input{
+                        margin-top: 5px;
+                        padding-bottom: 3px;
+                        font-size: 16px;
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 16px;
+                        line-height: 19px;
+                        width: 120%;
+                        border-bottom: 0.5px solid #A7A7A7;
+                        
+                        
+                    }
                 }
 
             }
         }
 
-        .documentos{
+        .documents-pdf{
             display: flex;
             justify-content: flex-start;
             flex-direction: column;
-            width: 100%;
+            width: 80%;
             margin-top: 40px;
            
             h2{
@@ -166,18 +185,23 @@ main{
                 font-weight: bold;
                 font-size: 18px;
                 line-height: 21px;
-                padding-left: 20px;
             }
             div{
-                
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 8% 0%;
                 h2{
                     font-style: normal;
                     font-weight: normal;
                     font-size: 18px;
                     line-height: 21px;
-                    margin-top: 40px;
-                    margin-left: 15px; 
-                }  
+                }
+                
+                img{
+                    width: 20px;
+                    height: 20px;
+                }
             }
         }
 
@@ -212,9 +236,7 @@ main{
 
             }
         }
-        .decisiones2{
-            display: none;
-        }
+
         .last-box{
             display: none;
         }
@@ -225,9 +247,7 @@ main{
         display: none;
     }
     @media screen and (min-width: 1400px){
-        padding: 0px;
         .containerbox{
-           
             padding: 70px 0px 0px 0px;
             display: grid;
             grid-template-columns: 32% 32%;
@@ -240,6 +260,7 @@ main{
                 margin: 20px 0px 65px 40px;
                 
                 .parte-superior{
+                    
                     .logotipo{
                         width: 108px;
                         height: 115px;
@@ -314,7 +335,7 @@ main{
             .formulario-stock{
                 width: 940px;
                 height: 730px;
-                .documentos{
+                .documents-pdf{
                     display: none;
                 }
                 form{
@@ -412,7 +433,7 @@ main{
             justify-content: center;
             flex-direction: column;
             background: rgba(196, 196, 196, 0.54);
-            .documentos-modal{
+            .documents-pdf-modal{
                 display: flex; // none-flex
                 align-items: center;
                 flex-direction: column;
@@ -462,7 +483,7 @@ main{
     }
 
     @media screen and (min-width: 1000px) and (max-width: 1399px){
-        padding-top: 0px;
+        padding: 0px;
         .containerbox{
            
             padding: 75px 0px 0px 30px;
@@ -548,7 +569,7 @@ main{
             .formulario-stock{
                 width: 940px;
                 height: 730px;
-                .documentos{
+                .documents-pdf{
                     display: none;
                 }
                 form{
@@ -646,7 +667,7 @@ main{
             justify-content: center;
             flex-direction: column;
             background: rgba(196, 196, 196, 0.54);
-            .documentos-modal{
+            .documents-pdf-modal{
                 display: flex; // none-flex
                 align-items: center;
                 flex-direction: column;
