@@ -112,10 +112,9 @@ header{
             }
         }
 
-        @media screen and (min-width: 1000px){
+        @media screen and (min-width: 1400px){
             height: 70px;
             width: 100%;
-            padding: 10px 5px 10px 70px;
             justify-content: space-around;
             .container-1{
                 display: inline-flex;
@@ -137,7 +136,83 @@ header{
             }
                         
             nav{
-                width: 55%;
+                //margin-left: 20%;
+                .menu{
+                                      
+                    ul{
+                        position: relative;
+                        display: flex;
+                        top: 0;
+                        right: 0;
+                        overflow: hidden;
+                        background: unset;
+                        height: unset;
+                        li{
+                            padding: 5px 15px;
+                            display: inline-flex;
+                            background: $bg-primary;
+                            align-items: center;
+                            margin-left: 15px;
+                            .perfil{    
+                                background-color: #C4C4C4;
+                                width: 32px;
+                                height: 32px;
+                                border-radius: 50%;
+                            }
+
+                            img{
+                                width: 25px;
+                                display: inline-flex;
+                                height: 20px;
+                            }
+                            img.arrow-down{
+                                display: inline-flex;
+                                cursor: pointer;
+                            }
+                            a{
+                                color: white;
+                                padding: unset;
+                                line-height: unset;
+                                font-family: $fuente_2;
+                                font-size: 16px;
+                                margin: 0px 8px;
+                            }
+                        }
+                    }
+                    input{
+                        display: none;
+                    }
+                    span{
+                        display:none;
+                    }
+                }
+            }
+        }
+
+        @media screen and (min-width: 1000px) and (max-width: 1399px){
+            height: 70px;
+            width: 100%;
+            justify-content: space-around;
+            .container-1{
+                display: inline-flex;
+                #search{
+                    background-color: $bg-primary;
+                    margin-left: 14px;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+                .lupa_trending{
+                    width: 16px;
+                    height: 16px;
+                    float: left;
+                    margin-left: 25px;
+                    cursor: pointer;
+                }
+            }
+                        
+            nav{
                 //margin-left: 20%;
                 .menu{
                                       
