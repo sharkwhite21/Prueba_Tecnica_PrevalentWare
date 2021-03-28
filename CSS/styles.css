@@ -1,8 +1,18 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  border: 0;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
 header {
   width: 100%;
   height: 70px;
   top: 0px;
-  padding: 10px 5%;
+  padding: 10px 4%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,7 +29,19 @@ header .searcher {
   display: none;
 }
 
-header h2 {
+header .logo-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo-name h2 {
   color: white;
   padding-right: 80px;
   font-style: normal;
@@ -28,7 +50,7 @@ header h2 {
   line-height: 19px;
 }
 
-header h2 a {
+header .logo-name h2 a {
   text-decoration: none;
   color: white;
 }
@@ -780,7 +802,7 @@ main .zoom {
     height: 50px;
     -webkit-box-shadow: 3px 3px 7px #b4b4b9;
             box-shadow: 3px 3px 7px #b4b4b9;
-    margin-top: 58px;
+    margin-top: 45px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1060,7 +1082,7 @@ main .zoom {
     height: 50px;
     -webkit-box-shadow: 3px 3px 7px #b4b4b9;
             box-shadow: 3px 3px 7px #b4b4b9;
-    margin-top: 58px;
+    margin-top: 45px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1215,15 +1237,5 @@ main .zoom {
     width: 30px;
     height: 40px;
   }
-}
-
-* {
-  padding: 0%;
-  margin: 0%;
-  border: 0;
-  font-family: 'Roboto', sans-serif;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
 }
 /*# sourceMappingURL=styles.css.map */
