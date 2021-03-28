@@ -515,11 +515,10 @@ main .companies .last-box {
 
 @media screen and (min-width: 1000px) {
   main {
-    height: 100%;
     padding-top: 0px;
   }
   main .containerbox {
-    margin: 45px 0px 0px 0px;
+    padding: 7% 0px 0px 0px;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 45% 50%;
@@ -726,9 +725,7 @@ main .companies .last-box {
   main .zoom {
     position: absolute;
     z-index: 2;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     width: 100%;
     height: 100%;
     -webkit-box-align: center;
