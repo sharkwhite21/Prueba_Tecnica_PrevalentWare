@@ -654,25 +654,32 @@ main .zoom {
 
 @media screen and (min-width: 1000px) and (max-width: 1399px) {
   main {
-    padding: 0px;
+    height: 91vmin;
+    padding-top: 0px;
   }
   main .containerbox {
-    padding: 75px 0px 0px 30px;
+    padding: 3% 0px 0px 60px;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 46% 32%;
-        grid-template-columns: 46% 32%;
+    -ms-grid-columns: 33% 50%;
+        grid-template-columns: 33% 50%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   main .containerbox .box {
     cursor: pointer;
-    width: 552px;
-    height: 310px;
-    margin: 20px 0px 65px 40px;
+    width: 390px;
+    height: 215px;
+    margin: 20px 0px 30px 104px;
   }
   main .containerbox .box .parte-superior .logotipo {
-    width: 108px;
-    height: 115px;
-    margin-bottom: 250px;
+    width: 75px;
+    height: 75px;
+    margin-bottom: 155px;
   }
   main .containerbox .box .parte-superior .logotipo img {
     height: 56px;
@@ -681,13 +688,13 @@ main .zoom {
   main .containerbox .box .parte-superior h2 {
     width: 410px;
     margin-top: 60px;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 42px;
     font-weight: normal;
     padding-left: initial;
   }
   main .containerbox .box .parte-inferior {
-    height: 90px;
+    width: 390px;
   }
   main .containerbox .box .parte-inferior img {
     width: 19px;
