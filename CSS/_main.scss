@@ -73,6 +73,7 @@ main{
     }
 
     .companies{
+        background-color: $bg-secundary;
         padding-top: 30px;
         .headerlinks{         
             a{
@@ -294,19 +295,16 @@ main{
         }
 
         .companies{
-            width: 100%;
             margin: 0%;
             display: flex;
-            //flex-direction: unset;
+            padding: 2% 0%;
             justify-content: center;
             .headerlinks{
-                align-self: flex-start;
-                padding-left: 60px;
-                margin-top: 30px;
+                height: 25px;
                 p{
                     font-style: normal;
                     font-weight: normal;
-                    font-size: 24px;
+                    font-size: 18px;
                     line-height: 28px;
                 }
             }
@@ -331,15 +329,17 @@ main{
                 }
             }
             .formulario-stock{
-                width: 940px;
-                height: 730px;
+                width: 80%;
+                height: 80%;
+                margin-bottom: 0px;
                 .documents-pdf{
                     display: none;
                 }
                 form{
                     display: grid;
-                    grid-template-columns: 50% 50%;
-                    margin-left: 60px;
+                    grid-template-columns: 40% 50%;
+                    justify-content: end;
+                    margin-bottom: 50px;
                     input{
                         margin-top: 13px;
                         width: 85%;
@@ -376,15 +376,12 @@ main{
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    padding-left: 30%;
+                    padding-left: 28%;
                     img{
                         width: 290px;
                         height: 237px;
                     }
                     .decisiones2{
-                        //width: 100%;
-                        
-                        //margin-top: 50px;
                         display: flex;
                         flex-direction: column;
                         align-items: center;

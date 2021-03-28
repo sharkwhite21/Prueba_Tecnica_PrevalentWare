@@ -421,6 +421,7 @@ main .containerbox .box .parte-inferior p {
 }
 
 main .companies {
+  background-color: #E5E7EB;
   padding-top: 30px;
 }
 
@@ -705,25 +706,22 @@ main .zoom {
     font-size: 14px;
   }
   main .companies {
-    width: 100%;
     margin: 0%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding: 2% 0%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
   main .companies .headerlinks {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-    padding-left: 60px;
-    margin-top: 30px;
+    height: 25px;
   }
   main .companies .headerlinks p {
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 28px;
   }
   main .companies .links {
@@ -751,8 +749,9 @@ main .zoom {
     width: 39px;
   }
   main .companies .formulario-stock {
-    width: 940px;
-    height: 730px;
+    width: 80%;
+    height: 80%;
+    margin-bottom: 0px;
   }
   main .companies .formulario-stock .documents-pdf {
     display: none;
@@ -760,9 +759,12 @@ main .zoom {
   main .companies .formulario-stock form {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 50% 50%;
-        grid-template-columns: 50% 50%;
-    margin-left: 60px;
+    -ms-grid-columns: 40% 50%;
+        grid-template-columns: 40% 50%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    margin-bottom: 50px;
   }
   main .companies .formulario-stock form input {
     margin-top: 13px;
@@ -810,7 +812,7 @@ main .zoom {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-left: 30%;
+    padding-left: 28%;
   }
   main .companies .formulario-stock .principal img {
     width: 290px;
