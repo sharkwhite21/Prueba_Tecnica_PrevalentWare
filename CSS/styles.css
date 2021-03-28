@@ -1,5 +1,5 @@
 header {
-  width: 375px;
+  width: 100%;
   height: 70px;
   top: 0px;
   padding: 10px 5%;
@@ -440,6 +440,10 @@ main .companies .headerlinks a {
   text-decoration: none;
 }
 
+main .companies .links2 {
+  display: none;
+}
+
 main .companies .links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -480,7 +484,7 @@ main .companies .formulario-stock {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 main .companies .formulario-stock img {
@@ -598,6 +602,10 @@ main .companies .decisiones2 {
 }
 
 main .companies .last-box {
+  display: none;
+}
+
+main .zoom {
   display: none;
 }
 
@@ -1126,6 +1134,7 @@ main .companies .last-box {
     width: 15px;
     height: 18px;
     margin-left: 90%;
+    cursor: pointer;
   }
   main .zoom .documentos-modal h2 {
     font-style: normal;
