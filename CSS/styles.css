@@ -142,7 +142,7 @@ header nav .menu span:nth-last-child(2) {
 
 @media screen and (min-width: 1000px) {
   header {
-    height: 70px;
+    height: 50px;
     width: 100%;
     padding: 10px 5px 10px 70px;
     -ms-flex-pack: distribute;
@@ -515,11 +515,11 @@ main .companies .last-box {
 
 @media screen and (min-width: 1000px) {
   main {
-    height: 100%;
+    height: 91vmin;
     padding-top: 0px;
   }
   main .containerbox {
-    padding: 2% 0px 0px 60px;
+    padding: 3% 0px 0px 60px;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 33% 50%;
@@ -574,17 +574,15 @@ main .companies .last-box {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding: 10px 0px 0px 30px;
   }
   main .companies .headerlinks {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-    padding-left: 60px;
-    margin-top: 30px;
+    height: 25px;
   }
   main .companies .headerlinks p {
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 28px;
   }
   main .companies .links {
@@ -612,8 +610,8 @@ main .companies .last-box {
     width: 39px;
   }
   main .companies .formulario-stock {
-    width: 940px;
-    height: 730px;
+    width: 600px;
+    height: 490px;
   }
   main .companies .formulario-stock .documentos {
     display: none;
@@ -671,11 +669,11 @@ main .companies .last-box {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-left: 30%;
   }
   main .companies .formulario-stock .principal img {
-    width: 290px;
-    height: 237px;
+    width: 230px;
+    height: 180px;
+    margin: 20px 0 0px;
   }
   main .companies .formulario-stock .principal .decisiones2 {
     display: -webkit-box;
